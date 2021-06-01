@@ -1,0 +1,83 @@
+:root {
+  --white: #fff;
+  --background: #F6F6F6;
+  --black: #000;
+  --text-gray: #7A7A7A;
+  --text-black: #333333;
+  --red: #F8475F;
+  --gray: #BDBDBD;
+
+  --container-width: 1224px;
+}
+
+@media (max-width: 1080px) {
+  html {
+      font-size: 93.75%;
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+      font-size: 87.5%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.swiper-container {
+
+  .swiper-pagination-bullet {
+    height: .8rem;
+    width: .8rem;
+
+    background: #BDBDBD;
+    opacity: .5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--red);
+    opacity: 1;
+  }
+
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right:0;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left:0;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+  color: #000;
+  font-size: 2rem;
+  font-weight: bolder;
+}

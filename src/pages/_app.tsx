@@ -1,18 +1,23 @@
 import  Head  from 'next/head'
 import Layout from '../components/Layout'
-import { ExemploProvider } from '../context/ExemploContext'
-import '../styles/globals.css'
+import { CartProvider } from '../context/CartContext'
+
+import 'swiper/swiper.scss'
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+
+import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }) {
   return(
-    <ExemploProvider>
+    <CartProvider>
       <Head>
-        <title>Exemplo</title>
+        <title>Corebiz</title>
       </Head>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </ExemploProvider>
+    </CartProvider>
   ) 
 }
 

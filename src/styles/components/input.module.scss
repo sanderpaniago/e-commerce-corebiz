@@ -1,0 +1,28 @@
+.hasError {
+    position: relative;
+    display: flex;
+
+    margin: 1.5rem 0 ;
+    
+    input {
+        border: 1px solid #D7182A !important;
+        border-radius: 5px;
+    }
+
+    span {
+        position: absolute;
+        font-size: .85rem;
+        color: #D7182A;
+
+        top: -1.5rem;
+        bottom: auto;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .hasError span {
+        bottom: -1.7rem;
+        top: auto;
+    }
+}

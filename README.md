@@ -1,43 +1,52 @@
-# Template Front-end Next.js
+# E-commerce Corebiz
 
-Configuração do ambiente que utilizo para Front-end, o projeto tem a configuração para rodar com docker.
+## 💻 Projeto
+
+Esse projeto constitue uma poc de um ecommerce para o teste da emrpesa Corebiz
 
 ## Tecnologias
 
 esse projeto utiliza:
 
-![Next.js](https://img.shields.io/badge/-Next.js-000000?&logo=next.js&logoColor=FFFFFF) ![Typescript](https://img.shields.io/badge/-typescript-3178C6?&logo=typescript&logoColor=FFFFFF) ![Docker](https://img.shields.io/badge/-Docker-2496ED?&logo=docker&logoColor=FFFFFF)
-
-
+Para o front-end:
+- Next.js
+- React.js
+- Sass
+- TypeScript
+- Yup
+- Unform
+- Axios
 ## Pré-requisitos:
+### Executando o projeto
 
-Você procisa do **NodeJs** e um gerenciador de dependencias(**NPM ou YARN**) em sua maquina. Caso queria executar em um container Docker ira necessitar o **Docker e docker-compose**
+Você precisa do **NodeJs** e um gerenciador de dependencias(**NPM ou YARN**) em sua maquina.
 
 ```sh
+// abrir um terminal para o backend e outro para o app web e rode o comando:
+
 // instalando as dependencias:
 npm install
 // ou 
 yarn install
 
 // executando o projeto:
+
 npm dev
 // ou
 yarn dev 
 ```
-Com o docker
-```sh
-npm install
-// ou 
-yarn install
 
-docker-compose -d up
-```
+## 📏 Layout do figma
+para acessar o layout do projeto [click aqui](https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge?node-id=0%3A1)
 
+## 👨🏻‍💻 Author:
 
-# Author:
+- **Sander Paniago** - [LinkedIn](https://www.linkedin.com/in/sander-paniago/) - [instagram](https://www.instagram.com/sander_paniago/)
 
-- **Sander Paniago** - [LinkedIn](https://www.linkedin.com/in/sanderpaniago)
+## 🚀 Build
 
-# licenças
+link para a [demo](https://e-commerce-corebiz.vercel.app/)
+
+## 🗝 licenças
 
 Este projeto é licenciado sobre a licença MIT - [LICENSE.md](LICENSE.md) para mais informações.

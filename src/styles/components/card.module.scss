@@ -1,0 +1,131 @@
+.cardContainer {
+    width: 95%;
+    height: 425px;
+    overflow: hidden;
+
+    & > img { 
+        width: 100%;
+        height: 40%;
+        object-fit: contain;
+        object-position: top;
+    }
+
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: Nunito;
+            color: #7A7A7A;
+
+            margin-top: .5rem;
+
+            height: 2rem;
+
+            text-align: center;
+        }
+
+        span {
+            margin: 0 auto;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+
+            &:nth-child(2) {
+                margin-top: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+
+            &:nth-child(3) {
+                text-decoration: line-through;
+                color: #7A7A7A;
+                height: 1.25rem;
+            }
+        }
+
+        p {
+            text-align: center;
+            color: #7A7A7A;
+            strong {
+                font-weight: 900;
+                font-size: 1.5rem;
+
+                color: black;
+
+                margin: 10px 0;
+            }
+        }
+
+        button {
+            background: var(--black);
+            height: 3rem;
+            color: #FFF;
+            border: 0;
+            border-radius: 5px;
+
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.25rem;
+
+            margin-top: .65rem;
+        }
+    }
+
+    .offContainer {
+        position: absolute;
+
+        width: 0;
+        height: 0;
+
+        right: 10px;
+
+        border-style: solid;
+        border-color: transparent var(--red) transparent transparent;
+        border-width: 0 4rem 4rem 0;
+        p {
+            position: absolute;
+            color: #FFF;
+            text-transform: uppercase;
+            right: -3.5rem;
+            top: .5rem;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .cardContainer {
+        transition: all ease .3s;
+
+        & > img {
+            object-fit: cover;
+            height: 50%;
+        }
+        .cardContent {
+            span{
+                &:nth-child(2) {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+
+            button {
+                transform: translateY(75px);
+
+                width: 75%;
+                margin: 10px auto;
+            }
+
+        }
+        &:hover {
+            background: #E6E8EA;
+
+            .cardContent button {
+                transform: translateY(0);
+            }
+        }
+    }
+}
